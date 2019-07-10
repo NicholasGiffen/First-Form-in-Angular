@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
       'city': new FormControl(null),
       'country': new FormControl(null, Validators.required),
       'zipCode': new FormControl(null, [Validators.pattern("[0-9]*"), Validators.maxLength(6)]),
-      'favoriteSauce': new FormControl(null)
+      'hearAbout': new FormControl(null)
     });
 
     // // Subscribe to value changes
