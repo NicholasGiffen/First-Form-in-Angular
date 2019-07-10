@@ -4,7 +4,7 @@
       <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
 
         <div class="form-group formTitle  ">
-          <h3 for="accountType">Welcome! Please Fill Out the Form to Continue</h3>
+          <h3 for="accountType">Please enter</h3>
           <!-- <div class="radio" *ngFor="let type of accountType">
             <input
               type="radio"
@@ -90,11 +90,11 @@
         </div>
 
         <div class="row">
-          
+
         </div>
 
 
-        <span *ngIf="!signupForm.valid && signupForm.touched" class="form-text text-muted">Please enter valid
+        <span *ngIf="!signupForm.valid && signupForm.touched" class="form-text text-danger bg-dark">Please enter valid
           data!</span>
 
         <div class="row justify-content-center">
